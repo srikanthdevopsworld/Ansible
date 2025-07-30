@@ -4,19 +4,18 @@
   tasks:
   - name: nginx install
     ansible.builtin.package:
-        name: nginx
-        state: present
+      name: nginx
+      state: present
   - name: start the nginx
     ansible.builtin.service:
-        name: nginx
-        state: started
-        enabled: yes
+      name: nginx
+      state: started
+      enabled: yes
   - name: install zip
     ansible.builtin.package:
-        name: zip
-        state: present
+      name: zip
+      state: present
   - name: install gcc
     ansible.builtin.package:
-        name: gcc
-        state: present
-        
+      name: gcc
+      state: present
