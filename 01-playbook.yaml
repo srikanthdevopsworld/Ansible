@@ -1,12 +1,11 @@
-# -name: ping
-# hosts: web
-
-# tasks:
-# -name: ping the server
-# ansible.builtin.ping:
-
-- name: Check connectivity with all hosts
-  hosts: web
+-name: ping
+ hosts: web
   tasks:
-    - name: Ping all hosts
+    -name: ping the server
       ansible.builtin.ping:
+
+# - name: Check connectivity with all hosts
+#   hosts: web
+#   tasks:
+#     - name: Ping all hosts
+#       ansible.builtin.ping:
