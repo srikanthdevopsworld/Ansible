@@ -1,4 +1,4 @@
-- name: ping the server
+- name: check ping the server
 hosts: web
 tasks:
   - name: ping server ip
