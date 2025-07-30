@@ -1,5 +1,13 @@
 - name: check ping the server
-hosts: web
-tasks:
+  hosts: web
+  tasks:
   - name: ping server ip
     ansible.builtin.ping:
+
+
+    
+# - name: Check connectivity with all hosts
+#   hosts: web
+#   tasks:
+#     - name: Ping all hosts
+#       ansible.builtin.ping:
