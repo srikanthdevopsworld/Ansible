@@ -6,9 +6,8 @@
     ansible.builtin.package:
         name: nginx
         state: present
-        msg: "Nginx installed"
   - name: start the nginx
     ansible.builtin.service:
         name: nginx
         state: started
-        msg: "nginx service started"
+        
