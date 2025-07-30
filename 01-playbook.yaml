@@ -3,4 +3,5 @@
   tasks:
   - name: ping server ip
     ansible.builtin.ping:
-    ansible.builtin.debug: "HEllo"
+    ansible.builtin.debug: 
+      msg: "Hello"
