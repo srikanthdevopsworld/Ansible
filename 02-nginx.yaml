@@ -15,4 +15,8 @@
     ansible.builtin.package:
         name: zip
         state: present
+  - name: install gcc
+    ansible.builtin.package:
+        name: gcc
+        state: present
         
