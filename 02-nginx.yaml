@@ -1,14 +1,14 @@
--name: nginx installation
--hosts: web
-
-Tasks:
-- name: ngix installation
-  ansible.builtin.package:
-      name: nginx
-      state: present
-      msg: "Nginx installed"
-- name: start the nginx
-  ansible.builtin.service:
-      name: nginx
-      state: started
-      msg: "nginx service started"
+- name: nginx installation
+  hosts: web
+  become: yes
+  Tasks:
+  - name: ngix installation
+    ansible.builtin.package:
+        name: nginx
+        state: present
+        msg: "Nginx installed"
+  - name: start the nginx
+    ansible.builtin.service:
+        name: nginx
+        state: started
+        msg: "nginx service started"
