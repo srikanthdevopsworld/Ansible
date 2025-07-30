@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: ping server ip
-      ansible.builtin.debug: 
-        msg: "Hello"
+    ansible.builtin.debug: 
+      msg: "Hello"
