@@ -5,4 +5,4 @@
   tasks:
   - name: variables from argments
     ansible.builtin.debug:
-      msg: "course {{COURSE}} DURATION: {{duration}}"
+      msg: "course {{COURSE}} DURATION: {{DURATION}}"
