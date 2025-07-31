@@ -5,7 +5,7 @@
     COURSE: Devsecops
     DURATION: 120hrs
     TRAINER: Shiva
-  task:
+  tasks:
   - name: Print the message using Variables
     ansible.builtin.debug:
-     msg: I am learning {{COURSE}}, duration is: {{DURATION}}, trainer name is: {{TRAINER}}
+     msg: I am learning {{ COURSE }}, duration is: {{ DURATION }}, trainer name is: {{ TRAINER }}
