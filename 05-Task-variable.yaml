@@ -7,9 +7,9 @@
   tasks: 
   - name: task level variables
     vars:
-      cousre: ansible
+      course: ansible
     ansible.builtin.debug:
       msg: "I am learning {{ course }}" 
   - name: variables
     ansible.builtin.debug:
-      msg: "I am learning {{ couser }}"
+      msg: "I am learning {{ course }}"
