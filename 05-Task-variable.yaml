@@ -1,0 +1,17 @@
+- name: Task variables
+  hosts: local
+  connection: local
+  vars:
+   course: AWS
+  
+  tasks: 
+  - name: task level variables
+    vars:
+      cousre: ansible
+    ansible.builtin.debug:
+      msg: "I am learning {{ course }}" 
+
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+      msg: "I am learning {{ couser }}"
