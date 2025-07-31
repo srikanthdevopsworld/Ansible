@@ -1,0 +1,8 @@
+- name: variables from arments
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: variables from argments
+    ansible.builtin.debug:
+      msg: "course {{COURSE}} DURATION: {{duration}}"

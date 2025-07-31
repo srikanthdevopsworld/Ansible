@@ -17,4 +17,4 @@
     ansible.builtin.debug:
       msg: "couser:{{COURSE}} duration: {{DURATION}} trainer: {{TRAINER}}"
   
-  
+   
