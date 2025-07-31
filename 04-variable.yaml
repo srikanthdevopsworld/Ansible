@@ -1,4 +1,4 @@
-- name: Variables
+- name: variables
   hosts: local
   connection: local
   vars: 
@@ -8,4 +8,4 @@
   tasks:
   - name: Print the message using Variables
     ansible.builtin.debug:
-      msg: "I am learning {{ COURSE }}, duration is: {{ DURATION }}, trainer name is: {{ TRAINER }"
+      msg: "I am learning {{ COURSE }}, duration is {{ DURATION }}, trainer name is {{ TRAINER }"
