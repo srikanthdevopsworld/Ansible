@@ -16,3 +16,10 @@
 
 
 
+- name: Playbook for tasks2
+  hosts: local
+  connection: local
+  tasks: 
+      - name: task1&2
+        ansible.builtin.debug:
+          msg: "hello from play 1 & 2"
