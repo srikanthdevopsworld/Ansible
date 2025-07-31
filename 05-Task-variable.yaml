@@ -10,8 +10,6 @@
       cousre: ansible
     ansible.builtin.debug:
       msg: "I am learning {{ course }}" 
-
-  tasks:
   - name: variables
     ansible.builtin.debug:
       msg: "I am learning {{ couser }}"
