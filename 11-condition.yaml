@@ -10,9 +10,9 @@
   - name: print the number gretaer than 10
     ansible.builtin.debug:
       msg: " given number {{ my_value }}is greate than 10 "
-    when: my_value > 10
+    when: {{ my_value }} > 10
 
   - name: print the number if less than 10
     ansible.builtin.debug:
       msg: "given number {{ my_value }} is less than 10 "
-    when: my_value <= 10
+    when: {{ my_value }} <= 10
