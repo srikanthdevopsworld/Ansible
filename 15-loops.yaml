@@ -1,13 +1,27 @@
+# - name: install packages
+#   hosts: local
+#   connection: local
+#   become: yes
+#   tasks:
+#   - name: Install packages
+#     ansible.builtin.dnf:
+#       name: "{{ item }}"
+#       stated: installed
+#     loop:
+#     - gcc
+#     - zip
+#     - mysql
+
 - name: install packages
-  hosts: local
-  connection: local
+  hosts: web
   become: yes
   tasks:
-  - name: Install packages
-    ansible.builtin.dnf:
+  - name: install packages
+    ansible.builtin.package:
       name: "{{ item }}"
-      stated: installed
+      state: installed
     loop:
     - gcc
-    - zip
     - mysql
+    - git
+    - zip
