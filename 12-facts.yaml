@@ -1,6 +1,6 @@
 - name: print the ansible facts
   hosts: local
-  coonection: local
+  connection: local
 
   tasks:
   - name: Print the ansible facts
