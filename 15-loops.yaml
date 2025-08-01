@@ -13,7 +13,8 @@
 #     - mysql
 
 - name: install packages
-  hosts: web
+  hosts: local
+  connection: local
   become: yes
   tasks:
   - name: install packages
