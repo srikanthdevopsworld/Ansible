@@ -6,10 +6,10 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
     #ansible.builtin.command: ls -ltr > /tmp/output.txt #won't work in the server
 
-- name: commd executing
-  ansible.builtin.command: ls -ltr
-  register: command_result
+  - name: commd executing
+    ansible.builtin.command: ls -ltr
+    register: command_result
 
-- name: print the output
-  ansible.builtin.debug:
-    msg: "{{command_result}}"
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{command_result}}"
