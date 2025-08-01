@@ -1,8 +1,11 @@
 - name: condition play book
   hosts: local
   connection: local
-  vars:
-    my_value: 15
+  vars_prompt:
+    - name: my_value
+      prompt: enter the number
+      private: yes
+
   tasks:
   - name: print the number gretaer than 10
     ansible.builtin.debug:
