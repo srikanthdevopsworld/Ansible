@@ -1,7 +1,7 @@
 - name: data types in yaml
   hosts: local
   connection: local
-  vars:
+  vars: #vars is a map
     course_name: "AWS with devops"
     duration: 120hrs
     topics:
