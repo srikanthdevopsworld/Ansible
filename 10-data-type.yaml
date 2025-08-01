@@ -1,0 +1,19 @@
+- name: data types in yaml
+  hosts: local
+  connection: local
+  vars:
+    course_name: "AWS with devops"
+    duration: 120hrs
+    topics:
+    - linux
+    - anisible
+    - jenkins
+    live: true
+    tools:
+      ci: jenkins
+      cloud: AWS
+      containerization: docker
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg: "Hello I am learning{{ course_name }} duration:{{ duration }} topics:{{ topics }} live:{{ live}} tools covered are:{{ tools }}"
