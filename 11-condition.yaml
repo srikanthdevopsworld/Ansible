@@ -4,7 +4,7 @@
   vars_prompt:
     - name: my_value
       prompt: enter the number
-      private: yes
+      private: false
 
   tasks:
   - name: print the number gretaer than 10
