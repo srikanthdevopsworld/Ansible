@@ -14,5 +14,5 @@
 
   - name: print the number if less than 10
     ansible.builtin.debug:
-      msg: "given number {{ my_value }} is less than 10 "
+      msg: "given number {{ my_value }} is less than or eqaul to 10 "
     when: my_value | int <= 10

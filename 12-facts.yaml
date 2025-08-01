@@ -1,0 +1,8 @@
+- name: print the ansible facts
+  hosts: local
+  coonection: local
+
+  tasks:
+  - name: Print the ansible facts
+    ansible.builtin.debug:
+      msg: "{{ ansible.facts }}"
