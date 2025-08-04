@@ -16,7 +16,7 @@
     amazon.aws.ec2_instance:
       name: "{{ item }}"
       subnetid: "{{ subnetid }}"
-      security_group: "{{ sg_id}}"
-      image_id: "{{ ami_id}}"
+      security_group: "{{ sg_id }}"
+      image_id: "{{ ami_id }}"
       instance_type: "{{ instance_type }}"
     loop: "{{ instances }}"
