@@ -2,7 +2,7 @@
   connection: local
   hosts: local
   vars: 
-    subnetid: subnet-05e81b7aa9e48968b
+    subnet_id: subnet-05e81b7aa9e48968b
     sg_id: sg-0fff1fb42a5d66a40
     ami_id: ami-09c813fb71547fc4f
     instance_type: t3.micro
@@ -15,7 +15,7 @@
   - name: create ec2 instances
     amazon.aws.ec2_instance:
       name: "{{ item }}"
-      subnetid: "{{ subnetid }}"
+      subnet_id: "{{ subnetid }}"
       security_group: "{{ sg_id }}"
       image_id: "{{ ami_id }}"
       instance_type: "{{ instance_type }}"
